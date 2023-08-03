@@ -48,7 +48,7 @@ namespace MagicVilla_VillaAPI.Controllers
             return Ok(villa);
         }
 
-        //Post
+        //Post or Create
         [HttpPost]
         [ProducesResponseType(StatusCodes.Status201Created)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
@@ -115,7 +115,7 @@ namespace MagicVilla_VillaAPI.Controllers
             return NoContent();
         }
 
-        //Put
+        //Put or Update
         [ProducesResponseType(StatusCodes.Status204NoContent)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         [HttpPut("{id:int}", Name = "UpdateVilla")]
